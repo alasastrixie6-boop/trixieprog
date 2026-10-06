@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trixie B. Alas-as | Software Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            --gradient-start: #a5c7e7;
+            --gradient-end: #c7ceea;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            min-height: 100vh;
+            color: #2d3748;
+        }
+
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+
+        .section-title {
+            @apply text-2xl font-semibold mb-6 relative pb-2;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, #4f46e5, #7c3aed);
+        }
+
+        .tech-badge {
+            @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white bg-opacity-20 backdrop-blur-sm border border-white border-opacity-20;
+        }
+
+        .project-card {
+            @apply bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+        }
+
+        .project-card:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .skill-level {
+            @apply text-xs font-medium px-2 py-1 rounded-full bg-opacity-20;
+        }
+
+        .skill-level.beginner {
+            @apply bg-blue-500 text-blue-200;
+        }
+
+        .skill-level.intermediate {
+            @apply bg-purple-500 text-purple-200;
+        }
+
+        .contact-btn {
+            @apply inline-flex items-center px-4 py-2 rounded-md transition-all duration-300;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <!-- Hero Section -->
+        <section class="text-center mb-20">
+            <h1 class="text-4xl font-bold mb-4">Trixie B. Alas-as</h1>
+            <h2 class="text-xl font-medium text-gray-700 mb-8">Fresh BSIT Graduate • Aspiring Software Engineer</h2>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg leading-relaxed">
+                    Hi, I'm Trixie Alas-as, a second-year BSIT (Bachelor of Science in Information Technology) student.
+                    As I continue my college journey, I want to improve my knowledge and become more confident in using technology.
+                    I'm interested in learning different skills, especially through activities, projects, and hands-on experiences in school.
+                    I know that I still have a lot to learn, so I'm willing to listen to advice, learn from my mistakes, and keep improving.
+                    I'm looking forward to gaining more experience and developing the skills I need for my future career in Information Technology.
+                </p>
+            </div>
+        </section>
+
+        <!-- Core Tech Stack -->
+        <section class="mb-20">
+            <h2 class="section-title">Technologies I have worked with</h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="tech-badge">
+                    <span class="skill-level beginner mr-2">Beginner</span>
+                    <span class="code-font">C++</span>
+                </span>
+                <span class="tech-badge">
+                    <span class="skill-level beginner mr-2">Beginner</span>
+                    <span class="code-font">Java</span>
+                </span>
+                <span class="tech-badge">
+                    <span class="skill-level beginner mr-2">Beginner</span>
+                    <span class="code-font">PHP</span>
+                </span>
+                <span class="tech-badge">
+                    <span class="skill-level beginner mr-2">Beginner</span>
+                    <span class="code-font">HTML</span>
+                </span>
+                <span class="tech-badge">
+                    <span class="skill-level beginner mr-2">Beginner</span>
+                    <span class="code-font">CSS</span>
+                </span>
+                <span class="tech-badge">
+                    <i class="fab fa-github mr-2"></i>
+                    <span>GitHub</span>
+                </span>
+                <span class="tech-badge">
+                    <i class="fab fa-git-alt mr-2"></i>
+                    <span>Git</span>
+                </span>
+                <span class="tech-badge">
+                    <i class="fas fa-code mr-2"></i>
+                    <span>VS Code</span>
+                </span>
+                <span class="tech-badge">
+                    <i class="fas fa-paint-brush mr-2"></i>
+                    <span>Canva</span>
+                </span>
+                <span class="tech-badge">
+                    <i class="fas fa-file-word mr-2"></i>
+                    <span>MS Office</span>
+                </span>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="mb-20">
+            <h2 class="section-title">Featured Work & Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AFTER_EXAM</h3>
+                        <p class="text-gray-300 mb-4">Project description or brief overview</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">NSTP</h3>
+                        <p class="text-gray-300 mb-4">Project description or brief overview</p>
+                        <a href="./NSTP/index.html" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">VLOG</h3>
+                        <p class="text-gray-300 mb-4">Project description or brief overview</p>
+                        <a href="./VLOG/index.html" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <a href="https://github.io" class="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                    <i class="fab fa-github mr-2"></i>
+                    <span>View Full Repository</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Currently Learning -->
+        <section class="mb-20">
+            <h2 class="section-title">Currently Learning</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-medium mb-3">Programming Fundamentals</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>C++</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>C#</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Java</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>PHP</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-3">Development Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Web Development</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Software Engineering</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Git/GitHub Workflow</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Project Documentation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Mindset -->
+        <section class="mb-20">
+            <h2 class="section-title">Developer Mindset</h2>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg leading-relaxed">
+                    Software development is a continuous process of learning, building, making mistakes, improving,
+                    trying again, and growing. It's about embracing the journey, not just the destination.
+                    Every line of code written, every bug fixed, and every feature implemented is a step forward
+                    in my development as a professional. I believe in the power of iteration and refinement,
+                    always striving to write cleaner, more efficient, and more maintainable code.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Footer -->
+        <footer class="text-center pt-12 border-t border-white border-opacity-20">
+            <h2 class="text-xl font-semibold mb-6">Let's Connect</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:alasastrixie6@gmail.com" class="contact-btn bg-blue-600 text-white hover:bg-blue-700">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://github.com" target="_blank" class="contact-btn bg-gray-800 text-white hover:bg-gray-900">
+                    <i class="fab fa-github mr-2"></i>
+                    <span>GitHub Profile</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
